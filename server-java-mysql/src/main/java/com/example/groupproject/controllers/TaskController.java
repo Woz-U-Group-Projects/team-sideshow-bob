@@ -3,6 +3,7 @@ package com.example.groupproject.controllers;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -27,6 +28,15 @@ public class TaskController {
   public List<Task> getTasks() {
     return taskRepository.findAll();
   }
+  
+	@GetMapping("/{id}")
+	public ResponseEntity<Task> getTask(@PathVariable(value="id") Long id) {
+		Task foundTask = taskRepository.findById(id).orElse(null);
+		if(foundTask == null) {
+			return ResponseEntity.notFound().header("Post", "Nothing found with that id").build();
+		}
+		return ResponseEntity.ok(foundTask);
+	}
 
   @PostMapping()
   public Task addTask(@RequestBody Task task) {
