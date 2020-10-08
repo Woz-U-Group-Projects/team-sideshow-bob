@@ -1,19 +1,13 @@
 package com.example.groupproject.models;
-
-
 //import java.sql.Timestamp;
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.CreationTimestamp;
-
-
 @Entity
 @Table(name = "ticket")
 public class Ticket {
@@ -26,7 +20,7 @@ public class Ticket {
 	private Long id;
 	
 	@Column(columnDefinition = "boolean default false")
-	  private boolean complete;
+	 private boolean complete;
 	
 	@CreationTimestamp
 	private Date timeStamp;
@@ -34,27 +28,11 @@ public class Ticket {
 	private String firstName;	
 	private String lastName;
 	private String email;
-
-import javax.persistence.*;
-import java.util.Date;
-
-@Entity
-@Table(name="ticket")
-
-public class Ticket {
-	
-	
-	
-	@Id
-	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private Integer id;
-
 	private String content;
 	private String category;
 	private String urgency;
 	
 	
-
 	
 //	All Getters and Setters
 	
@@ -67,10 +45,10 @@ public class Ticket {
 	
 	
 	public boolean getComplete() {
-	    return this.complete;
+	  return this.complete;
 	}	
 	public void setComplete(boolean complete) {
-	    this.complete = complete;
+	  this.complete = complete;
 	}
 	
 	
@@ -105,20 +83,6 @@ public class Ticket {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
-
-	@Column(columnDefinition = "boolean default false")
-	  private boolean submit;
-	
-	public Integer getId() {
-		    return this.id;
-		    
-		  }
-
-	public void setId(Integer id) {
-		    this.id = id;
-		  }
-
 	
 	public String getContent() {
 		return content;
@@ -126,7 +90,6 @@ public class Ticket {
 	public void setContent(String content) {
 		this.content = content;
 	}
-
 		  	
 	
 	public String getCategory() {
@@ -140,35 +103,15 @@ public class Ticket {
 	public String getUrgency() {
 		return urgency;
 	}
-
-	public boolean getSubmit() {
-	    return this.submit;
-	  }
-
-	  public void setSubmit(boolean submit) {
-	    this.submit = submit;
-	  }
-
-	public String getCategory() {
-		return category;
-	}
-
-	public void setCategory(String category) {
-		this.category = category;
-	}
-
-	public String getUrgency() {
-		return urgency;
-	}
-
-
 	public void setUrgency(String urgency) {
 		this.urgency = urgency;
 	}
 	
+}
 
 
-	
+
+
 
 
 
