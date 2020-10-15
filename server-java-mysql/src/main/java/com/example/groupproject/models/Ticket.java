@@ -1,18 +1,13 @@
 package com.example.groupproject.models;
-
 //import java.sql.Timestamp;
 import java.util.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
-
 import org.hibernate.annotations.CreationTimestamp;
-
-
 @Entity
 @Table(name = "ticket")
 public class Ticket {
@@ -25,7 +20,7 @@ public class Ticket {
 	private Long id;
 	
 	@Column(columnDefinition = "boolean default false")
-	  private boolean complete;
+	 private boolean complete;
 	
 	@CreationTimestamp
 	private Date timeStamp;
@@ -50,10 +45,10 @@ public class Ticket {
 	
 	
 	public boolean getComplete() {
-	    return this.complete;
+	  return this.complete;
 	}	
 	public void setComplete(boolean complete) {
-	    this.complete = complete;
+	  this.complete = complete;
 	}
 	
 	
@@ -88,7 +83,6 @@ public class Ticket {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-
 	
 	public String getContent() {
 		return content;
@@ -114,3 +108,10 @@ public class Ticket {
 	}
 	
 }
+
+
+
+
+
+
+
