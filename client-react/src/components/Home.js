@@ -1,12 +1,16 @@
 import React from "react";
 import axios from "axios";
-import '../ticket.min.css'
 import Form from 'react-bootstrap/Form'
-import Col from 'react-bootstrap/Col'
+import Row from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
-
+import './Form.css'
 class Ticket extends React.Component {
-    state = {
+    constructor(props) {
+        super(props);
+        this.state = this.getInitialState();
+    }
+
+    getInitialState = () => ({
         firstName: "",
         lastName: "",
         email: "",
@@ -14,6 +18,10 @@ class Ticket extends React.Component {
         category: "",
         urgency: "",
         tickets: [],
+    })
+
+    componentWillMount() {
+        this.initialState = this.state
     }
 
     handleChange = (event) => {
@@ -45,7 +53,11 @@ class Ticket extends React.Component {
         }).then(response => {
             alert('Your ticket has been submitted');
         });
+
     };
+    resetState = () => {
+        this.setState(this.getInitialState());
+    }
 
     getData = () => {
         let url = "http://localhost:8080/tickets";
@@ -58,73 +70,76 @@ class Ticket extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
-                    <label>First Name:</label>
-                    <input type="text" name="firstName" value={this.state.firstName} onChange={this.handleChange} />
+
+                <Form onSubmit={this.handleSubmit}>
+                    <Form.Group className="Input">
+                    <Form.Control type="text" name="firstName" placeholder= "First Name" value={this.state.firstName} onChange={this.handleChange} />
+                    </Form.Group>
+                    <Form.Group className="Input">
+                    <Form.Control type="text" name="lastName" placeholder= "Last Name" value={this.state.lastName} onChange={this.handleChange} />
+                    </Form.Group>
+                    <Form.Group className="Input">
+                    <Form.Control type="text" name="email" placeholder="Email" value={this.state.email} onChange={this.handleChange} />
+                    </Form.Group>
                     <br></br>
-                    <label>Last Name:</label>
-                    <input type="text" name="lastName" value={this.state.lastName} onChange={this.handleChange} />
-                    <br></br>
-                    <label>Email:</label>
-                    <input type="text" name="email" value={this.state.email} onChange={this.handleChange} />
-                    <br></br>
-                    <label>
-                        Select a Category:<br></br>
-                        <select value={this.state.category} onChange={(e) => this.setState({ category: e.target.value })}>
+
+                    <Form.Group className="dropdown">
+                        <Form.Label>Select a Category:</Form.Label>
+                        <Form.Control as="select" value={this.state.category} onChange={(e) => this.setState({ category: e.target.value })}>
                             <option value="hardware">Hardware</option>
                             <option value="software">Software</option>
                             <option value="internet">Internet</option>
                             <option value="other">Other</option>
-                        </select>
-                    </label>
-                    <label>Please Describe Your Issue:</label>
+                        </Form.Control>
+                    </Form.Group>
                     <br></br>
-                    <textarea value={this.state.content} name="content" onChange={this.handleChange} />
-                    <label>
+
+                    <Form.Group className="Issue">
+                    <Form.Label>Please Describe Your Issue:</Form.Label>
+                    <Form.Control as="textarea" rows="7" value={this.state.content} name="content" onChange={this.handleChange} />
+                    </Form.Group>
+
+                    <fieldset>
+                        <Form.Group as={Row}>
+                    <Form.Label className="radio" column sm={12}>
                         Select the Urgency Level:<br></br>
-                        <input
+                    </Form.Label>    
+                        <Form.Check className="radioButtons"
                             type="radio"
+                            label="Urgent"
                             name="selectedOption"
                             value="Urgent"
                             checked={this.state.selectedOption === "Urgent"}
                             onChange={this.handleChange}
                         />
-                            Urgent<br></br>
-                        <input
+                        <Form.Check className="radioButtons"
                             type="radio"
+                            label="Standard"
                             name="selectedOption"
-                            value="Normal"
-                            checked={this.state.selectedOption === "Normal"}
+                            value="Standard"
+                            checked={this.state.selectedOption === "Standard"}
                             onChange={this.handleChange}
                         />
-                            Normal<br></br>
-                        <input
+                        <Form.Check className="radioButtons"
                             type="radio"
+                            label="Low Priority"
                             name="selectedOption"
                             value="Low Priority"
                             checked={this.state.selectedOption === "Low Priority"}
                             onChange={this.handleChange}
                         />
-                            Low Priority
-              </label>
+                    </Form.Group>
+                    </fieldset>
+                    <br></br>
+                    <br></br>
 
-                    <button
-                        type="button"
-                        className="btn btn-primary"
-                        onClick={this.addTicket}
-                    >
-                        Submit
-              </button>
-                </form>
+                    <Button variant="secondary" type="button" className="submit" onClick={this.addTicket}>Submit Ticket</Button>
+                </Form>
 
-                <h3>Pending Tickets</h3>
-                <button
-                    type="button"
-                    className="btn btn-primary"
-                    onClick={this.getData}
-                >
-                    Show Pending
-            </button>
+                <br></br>
+
+                <h3 className="Input">Pending Tickets</h3>
+                    <Button variant="secondary" type="button" className="submit" onClick={this.getData}>Show Pending</Button>
                 <ul>
                     {this.state.tickets.map(p => (
                         <li key={p.id}>
