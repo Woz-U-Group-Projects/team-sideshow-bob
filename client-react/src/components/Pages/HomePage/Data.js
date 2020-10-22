@@ -9,6 +9,6 @@ export const HomeObjOne = {
     description: 'More Code description can go here',
     buttonLabel: 'Copy Code',
     imgStart: '',
-    img: 'carbon.png',
+    img: '../components/assets/carbon-Home-js.svg',
     alt: 'Code Script'
 };

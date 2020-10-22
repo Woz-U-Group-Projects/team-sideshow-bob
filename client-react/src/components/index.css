@@ -12,29 +12,9 @@ code {
     monospace;
 }
 
-.card {
-  border-radius: 25px;
-  position: relative;
-  padding: 25px 15px;
-  background-color: #81ecec;
-  margin: 50px 0;
-  height: 200px;
-  box-shadow: 0 2px 5px #ccc;
-  text-align: left;
-}
 
 .card img {
   margin: 30px 20px 0 0;
 }
 
-.info {
-  margin: 20px 0;
-  color: #1a7e76;
-}
 
-.circle-img {
-  border-radius: 50%;
-  border: 7px solid #fff;
-  width: 120px;
-  height: 120px;
-}
