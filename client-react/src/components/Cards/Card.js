@@ -1,10 +1,12 @@
 import React from 'react'
 import Card from './CardUi'
 
-import IMG_1 from '../assets/IMG_1.jpg'
-import IMG_2 from '../assets/IMG_2.jpg'
-import IMG_3 from '../assets/IMG_3.jpeg'
+import IMG_1 from '../assets/IMG_1.jpg';
+import IMG_2 from '../assets/IMG_2.jpg';
+import IMG_3 from '../assets/IMG_3.jpeg';
+
 import IMG_4 from '../assets/IMG_4.jpeg'
+
 
 
 class Cards extends React.Component {
@@ -14,12 +16,15 @@ class Cards extends React.Component {
 
     }
 
+  
+      
+
     render() {
         return(
             <div className= "container-fluid d-flex justify-content-center">
                 <div className="row">
                     <div className="col-md-4">
-                        <Card imgsrc={IMG_1} title= "Name" link=  "https://www.linkedin.com/"></Card> 
+                        <Card imgsrc={IMG_1} title= "Name" link=""></Card> 
                     </div>
                     <div className="col-md-4">
                         <Card imgsrc={IMG_2} title= "Name"/>

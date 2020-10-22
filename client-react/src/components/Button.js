@@ -16,11 +16,11 @@ export const Button = ({
     children,
     type,
     onClick,
-    buttonSyle,
+    buttonStyle,
     buttonSize
 }) => {
 
-    const checkButtonStyle = STYLES.includes(buttonSyle) ? buttonSyle : STYLES[0]
+    const checkButtonStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
 
     const checkButtonSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
 
