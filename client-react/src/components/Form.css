@@ -29,4 +29,10 @@
 
 .submit {
     display: block !important;
+    box-shadow: 0.5px 0.5px 0.5px 1px grey;
 }
+
+.form-container {
+    margin-top: 50px;
+}
+
