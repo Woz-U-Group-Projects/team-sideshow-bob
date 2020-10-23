@@ -1,17 +1,29 @@
-
 import React from "react";
-import  Ticket from "./components/Home";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import ViewTicket from "./components/ViewTicket";
+// import { library } from '@fortawesome/fontawesome-svg-core'
+// import { fab } from '@fortawesome/free-brands-svg-icons'
 import "./App.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from "./components/Navbar/Navbar";
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+
+// library.add(fab)
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Ticket />
 
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Footer />
+
+        <Route exact path="/"><Home/></Route>
+        <Route path="/view"><ViewTicket /></Route>
+
+      </div>
+    </Router>
+
   );
 }
 

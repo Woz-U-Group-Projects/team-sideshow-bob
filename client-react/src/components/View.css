@@ -1,0 +1,33 @@
+.table-header{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+table, th, td {
+    border: 1px solid black;
+    text-align: center;
+    padding: 20px;
+    margin-left: 20px;
+  }
+th {
+    background-color: #4ad9e4;
+    color: white;
+    font-weight: 400;
+}
+td {
+    padding: 10px;
+}
+
+span{
+    font-weight: bold;
+}
+
+.delete-button {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.results {
+    margin-left: 20px;
+}
