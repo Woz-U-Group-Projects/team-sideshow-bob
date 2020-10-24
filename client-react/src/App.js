@@ -1,6 +1,6 @@
 import React from "react";
-import Home from "./components/home";
-// import Task from "./components/Task";
+import CreateTicket from "./components/CreateTicket";
+import Home from "./components/Home";
 import Navbar from "./components/Navbar/Navbar";
 import ViewTicket from "./components/ViewTicket";
 import "./App.css";
@@ -13,6 +13,7 @@ function App() {
         <Navbar />
 
         <Route exact path="/" component={Home} />
+        <Route path="/create" component={CreateTicket} />
         <Route path="/view" component={ViewTicket} />
 
       </div>

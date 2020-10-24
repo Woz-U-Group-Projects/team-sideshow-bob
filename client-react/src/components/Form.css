@@ -1,0 +1,32 @@
+.Input {
+    width: 40%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.Issue {
+    width: 40%;
+    margin-left: 20px;
+}
+
+.submit {
+    margin-left: 20px;
+    display: block;
+}
+
+.dropdown {
+    margin-left: 20px;
+    width: 40%;
+}
+
+.radio {
+    margin-left: -10px;
+}
+
+.radioButtons {
+    margin-left: 25px;
+}
+
+.submit {
+    display: block !important;
+}
