@@ -1,10 +1,16 @@
-body {
-    text-align: center;
+.FooterItems {
+    margin-top: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background: #7510F7;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+  
   }
   
   .wrapper {
-    display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
   }
@@ -18,7 +24,7 @@ body {
     color: #080202;
   }
   .wrapper a:nth-child(2) {
-    color: #4867AA;
+    color: white;
   }
   .wrapper a:nth-child(3) {
     color: #1DA1F2;

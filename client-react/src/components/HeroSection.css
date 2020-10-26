@@ -51,9 +51,29 @@
 }
 
 .dark {
-    color:purple;
+    color:#7510F7 !important;
 }
 
 .darkBg {
-    background:purple;
+    background-color:#7510F7 !important;
+}
+
+.home__hero-subtitle {
+    max-width: 440px;
+    margin-bottom: 35px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.home__hero-img-wrapper {
+    max-width: 555px;
+}
+
+.home__hero-img {
+    max-width: 150%;
+    margin-top: 0;
+    margin-right: 0;
+    margin-left: 10px;
+    padding-right: 0;
+
 }

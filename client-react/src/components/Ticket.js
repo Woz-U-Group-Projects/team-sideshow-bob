@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Col'
 import Button from 'react-bootstrap/Button'
 import './Form.css'
 
-class Home extends React.Component {
+class Ticket extends React.Component {
   constructor(props) {
     super(props);
     this.state = { tickets: [] };
@@ -52,9 +52,10 @@ class Home extends React.Component {
     render() {
         return (
           <div className="form-container">
-          <h3>Please Create a Ticket</h3>
+         
                   
                   <form   onSubmit={this.handleSubmit}>
+                  <h3>Please Create a Ticket</h3>
                       <label >First Name:</label>
                       <input  className="Input" type="text" name="firstName" ref={this.firstName} />
                       <br></br>
@@ -94,4 +95,4 @@ class Home extends React.Component {
         );
     }
 }
-export default Home;
+export default Ticket;

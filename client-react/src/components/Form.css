@@ -1,3 +1,66 @@
+body {
+    background-color: #7510F7;
+}
+
+form {
+    background: -webkit-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    background: -moz-linear-gradient(bottom, #CCCCCC, #EEEEEE 175px);
+    background: #7510F7;
+    margin: auto;
+    position: relative;
+    width: 650px;
+    height: 750px;
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px;
+    border: 1px solid #999;
+    border: inset 1px solid #999;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
+  }
+
+  /* input {
+    width: 375px;
+    display: block;
+    border: 1px solid #999;
+    height: 25px;
+    -webkit-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+  } */
+
+  /* textarea#feedback {
+    width: 375px;
+    height: 150px;
+    display: block;
+  } */
+
+  /* button {
+    width: 100px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background: #09C;
+    color: #fff;
+    font-family: Tahoma, Geneva, sans-serif;
+    height: 30px;
+    border-radius: 15px;
+    border: 1p solid #999;
+  } */
+  
+  /* input.button:hover {
+    background: #fff;
+    color: #09C;
+  } */
+ 
+
 .Input {
     width: 40%;
     margin-left: 20px;
@@ -29,7 +92,7 @@
 
 .submit {
     display: block !important;
-    box-shadow: 0.5px 0.5px 0.5px 1px grey;
+    box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
 }
 
 .form-container {

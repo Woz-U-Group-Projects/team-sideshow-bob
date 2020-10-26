@@ -1,6 +1,12 @@
 import React from "react";
 import axios from "axios";
-
+import './task.min.css';
+import ReactFlexyTable from "react-flexy-table";
+import "react-flexy-table/dist/index.css";
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import "../App.css";
 
 class ViewTicket extends React.Component {
     constructor(props) {
@@ -17,22 +23,19 @@ class ViewTicket extends React.Component {
     getData = () => {
       // Java Spring Boot uses port 8080
       let url = "http://localhost:8080/tickets";
-      // axios.get(url).then(response => console.log(response.data));
       axios.get(url).then(response => this.setState({ tickets: response.data }));
     };
   
-  
+
     getOne = (event) => {
         var id = event.target.value;
         let url = "http://localhost:8080/tickets/" + id;
         axios.get(url).then(response => this.setState({ oneTicket: response.data }));
-        // axios.get(url).then(response => console.log(response.data));
     };
   
     deleteOne = (event) => {
         var id = event.target.value;
         let url = "http://localhost:8080/tickets/" + id;
-        // var heads={ 'Access-Control-Allow-Origin': true}
         axios.delete(url).then(response => {
           this.getData();
           // empty single ticket display
@@ -46,8 +49,6 @@ class ViewTicket extends React.Component {
     complete = (event) => {
         var id = event.target.value;
         let url = "http://localhost:8080/tickets/" + id;
-        // var heads={ 'Access-Control-Allow-Origin': true}
-        console.log("test put");
         axios.put(url, { complete: true }).then(response => {
           // refresh the data
           this.getData();
@@ -61,6 +62,25 @@ class ViewTicket extends React.Component {
       let deleteButton;
       let completeButton;
       let display;
+      let table;
+
+      const additionalCols = [{
+        header: "View",
+        td: (data) => {
+          return <div>
+            <button type="button" value={data.id} onClick={this.getOne} className="btn btn-primary">View</button>
+          </div>
+        }
+      }]
+
+      if (Object.keys(this.state.tickets).length !== 0) {
+        var data = [];
+        var item;
+        for ( item of this.state.tickets) {
+            data.push({"id": item.id, "First_Name" : item.firstName, "Last_Name": item.lastName, "Email": item.email, "Urgency": item.urgency, "Complete": item.complete});
+        }
+        table =  <ReactFlexyTable data={data} additionalCols={additionalCols} globalSearch/>
+      }; 
 
       if (Object.keys(this.state.oneTicket).length !== 0) {
         deleteButton = <button type="button" value={this.state.oneTicket.id} onClick={this.deleteOne} className="btn btn-danger">Delete</button>;
@@ -73,46 +93,23 @@ class ViewTicket extends React.Component {
                    <p>Urgency: {this.state.oneTicket.urgency} , Category: {this.state.oneTicket.category}</p>
                    <p>Content: {this.state.oneTicket.content}</p>
                    </div>;
+        
       };
 
       return (
         <div>
-          <h3>This is our Ticket Component</h3>
-    
-          <table>
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Email</th>
-                <th>Category</th>
-                <th>Urgency</th>
-                <th>Complete Status</th>
-                <th>View Ticket</th>
-              </tr>
-            </thead>
-            <tbody>
-              {this.state.tickets.map(p => (
-                <tr key={p.id}>
-                  <td>{p.firstName} {p.lastName}</td>
-                  <td>{p.email}</td>
-                  <td>{p.category}</td>
-                  <td>{p.urgency}</td>
-                  <td>{p.complete.toString()}</td>
-                  <td><button type="button" value={p.id} onClick={this.getOne} className="btn btn-primary">View</button></td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
-          <hr></hr>
-          {/* <ul>
-            {this.state.tickets.map(p => (
-              <li key={p.id}>
-                  {p.firstName} {p.lastName} <button type="button" value={p.id} onClick={this.getOne}>View</button>
-              </li>
-            ))}
-          </ul> */}
-                {display}<br></br>
-                {deleteButton}{completeButton}
+          <br></br>
+          <Container fluid>
+            <Row >
+              <Col  xs lg="8">{table}</Col>
+
+          <Col xs lg="4">
+                {display}
+                <br></br>
+                {deleteButton}{completeButton}</Col>
+
+            </Row>
+          </Container>
                 
         </div>
 

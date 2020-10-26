@@ -1,7 +1,7 @@
 .NavbarItems {
-    background: linear-gradient(90deg, rgb(110,94,254) 0%, rgba(73,63,252,1) 100%);
+    background: #7510F7;
     height: 80px;
-    box-shadow: 3px 3px 3px 3px grey;
+    box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
     display: flex;
     align-items: center;
     font-size: 1.2rem;
@@ -58,7 +58,7 @@
 @media screen and (max-width: 480px) {
     .NavbarItems {
         position: relative;
-        box-shadow: 3px 3px 3px 3px grey;
+        box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
     }
 
 .nav-menu {
@@ -146,7 +146,7 @@ Button {
 @media screen and (max-width: 768px) {
     .NavbarItems {
         position: relative;
-        box-shadow: 3px 3px 3px 3px grey;
+        box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
     }
 
 .nav-menu {
@@ -234,7 +234,7 @@ Button {
 @media screen and (max-width: 1024px) {
     .NavbarItems {
         position: relative;
-        box-shadow: 3px 3px 3px 3px grey;
+        box-shadow: 0.5px 0.5px 8px rgba(0, 0, 0, 0.3);
         
     }
 
@@ -314,8 +314,8 @@ Button {
     color: #6568F4;
     transition: 250ms;
 }
-/* Button {
+Button {
     display: none !Important;
-} */
+}
 
 }

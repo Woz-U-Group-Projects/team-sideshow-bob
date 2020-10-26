@@ -1,8 +1,11 @@
 import React from "react";
-import Home from "./components/Home";
+import Ticket from "./components/Ticket";
 import Navbar from "./components/Navbar/Navbar";
 import ViewTicket from "./components/ViewTicket";
-import Home2 from ".//components/Pages/HomePage/Home2"
+import About from "./components/Pages/HomePage/About"
+// get our fontawesome imports
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 
@@ -10,6 +13,7 @@ import Cards from "./components/Cards/Card"
 
 import "./App.css";
 import { BrowserRouter as Router, Route} from 'react-router-dom';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -17,16 +21,21 @@ function App() {
       <div>
         <Navbar />
         
+        
 
         
 
-        <Route exact path="/" component={Home} />
+        <Route exact path="/createticket" component={Ticket} />
         <Route path="/view" component={ViewTicket} />
         <Route path="/contact" component={Cards} />
-        <Route path="/about" exact component={Home2} />
+        <Route path="/about" exact component={About} />
+        <Footer/>
         
 
       </div>
+      
+      
+      
     </Router>
   );
 }
