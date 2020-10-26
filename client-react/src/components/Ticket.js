@@ -54,7 +54,7 @@ class Ticket extends React.Component {
           <div className="form-container">
          
                   
-                  <form   onSubmit={this.handleSubmit}>
+                  <Form   onSubmit={this.handleSubmit}>
                   <h3>Please Create a Ticket</h3>
                       <label >First Name:</label>
                       <input  className="Input" type="text" name="firstName" ref={this.firstName} />
@@ -88,9 +88,9 @@ class Ticket extends React.Component {
                       <br></br>
                       <textarea ref={this.content} name="content" className="Issue"/>
                       <br></br>
-                      <button  type="button" className="submit" onClick={this.addTicket}> Submit </button>
+                      <Button variant="secondary" type="button" className="submit" onClick={this.addTicket}>Submit Ticket</Button>
                       
-              </form>
+              </Form>
         </div>
         );
     }
