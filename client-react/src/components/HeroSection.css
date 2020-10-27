@@ -70,10 +70,35 @@
 }
 
 .home__hero-img {
-    max-width: 150%;
-    margin-top: 0;
-    margin-right: 0;
-    margin-left: 10px;
+    max-width: 25rem;
+    margin: 0 0 0 10px;
     padding-right: 0;
 
+}
+
+img {
+    border: 0;
+    max-width: 100%;
+    vertical-align: middle;
+    display: inline-block;
+
+}
+
+@media screen and (max-width: 997px){
+    .container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .home__hero-text-wrapper {
+        padding-bottom: 60px;
+        
+    }
+}
+
+.col {
+    /* max-width: 100%; */
+    flex-basis: 100%;
 }

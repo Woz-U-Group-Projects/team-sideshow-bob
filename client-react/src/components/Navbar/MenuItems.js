@@ -24,9 +24,19 @@ export const MenuItems = [
         url: '/contact',
         cName: 'nav-links'
     },
+
+    {
+        title: 'Copy Code',
+        url: '/copycode',
+        cName: 'nav-links'
+    },
+
     {
         title: 'Sign Up',
         url: '#',
         cName: 'nav-links-mobile'
     }
+
 ]
+
+   
