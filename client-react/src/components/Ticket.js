@@ -1,9 +1,10 @@
 import React from "react";
 import axios from "axios";
-import Form from 'react-bootstrap/Form'
-import Row from 'react-bootstrap/Col'
-import Button from 'react-bootstrap/Button'
-import './Form.css'
+import Form from 'react-bootstrap/Form';
+import Row from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
+import './Form.css';
+import { motion } from 'framer-motion';
 
 class Ticket extends React.Component {
   constructor(props) {
@@ -54,7 +55,11 @@ class Ticket extends React.Component {
           <div className="form-container">
          
                   
-                  <Form   onSubmit={this.handleSubmit}>
+                  <motion.Form onSubmit={this.handleSubmit}
+                  initial={{}}
+                  animate={{
+                  }}
+                  >
                   <h3>Please Create a Ticket</h3>
                       <label >First Name:</label>
                       <input  className="Input" type="text" name="firstName" ref={this.firstName} />
@@ -90,7 +95,7 @@ class Ticket extends React.Component {
                       <br></br>
                       <Button variant="secondary" type="button" className="submit" onClick={this.addTicket}>Submit Ticket</Button>
                       
-              </Form>
+              </motion.Form>
         </div>
         );
     }
