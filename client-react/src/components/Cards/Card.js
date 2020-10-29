@@ -2,8 +2,8 @@ import React from 'react'
 import Card from './CardUi'
 
 // import IMG_1 from 'https://media-exp1.licdn.com/dms/image/C5103AQEFNvlsjPks7w/profile-displayphoto-shrink_200_200/0?e=1609372800&v=beta&t=9O_lO6MZ_rLRwc5Ilmy10WWlaMQ_CXI5n2ZLHPVJO1Q';
-import IMG_2 from '../assets/IMG_2.jpg';
-import IMG_3 from '../assets/IMG_3.jpeg';
+// import IMG_2 from '../assets/IMG_2.jpg';
+// import IMG_3 from '../assets/IMG_3.jpeg';
 
 import IMG_4 from '../assets/IMG_4.jpeg'
 

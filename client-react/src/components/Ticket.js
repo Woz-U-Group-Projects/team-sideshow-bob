@@ -56,8 +56,8 @@ class Ticket extends React.Component {
          
                   
                   <motion.Form onSubmit={this.handleSubmit}
-                  initial={{}}
-                  animate={{
+                  initial={{x:-350}}
+                  animate={{x:0
                   }}
                   >
                   <h3>Please Create a Ticket</h3>

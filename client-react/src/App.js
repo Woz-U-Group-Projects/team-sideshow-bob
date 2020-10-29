@@ -11,6 +11,7 @@ import CopyCode from "./components/CopyCode";
 import "./App.css";
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import Footer from "./components/Footer";
+import Home from "./components/Home";
 
 
 
@@ -23,7 +24,7 @@ function App() {
         
 
         
-
+        <Route exact path="/" component={Home} />
         <Route exact path="/createticket" component={Ticket} />
         <Route path="/view" component={ViewTicket} />
         <Route path="/contact" component={Cards} />
