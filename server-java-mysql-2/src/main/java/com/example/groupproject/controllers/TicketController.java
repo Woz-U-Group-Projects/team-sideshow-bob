@@ -19,7 +19,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.example.groupproject.models.Ticket;
 import com.example.groupproject.models.TicketRepository;
 
-
+@CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
 @RequestMapping("/tickets")
 public class TicketController {
