@@ -39,11 +39,13 @@ class ViewTicket extends React.Component {
         axios.delete(url).then(response => {
           this.getData();
           // empty single ticket display
-          this.setState({ oneTicket: {}})}).catch(err => {
+          this.setState({ oneTicket: {}})
+          setTimeout(this.refreshPage(), 5000)
+        }).catch(err => {
           console.log(err);
         }); 
         // refresh the data
-        this.getData();
+        // this.refreshPage();
     };
 
     complete = (event) => {
@@ -53,9 +55,15 @@ class ViewTicket extends React.Component {
           // refresh the data
           this.getData();
           this.setState({ oneTicket: response.data });
+          setTimeout(this.refreshPage(), 5000)
+        
         });
+
       };
 
+      refreshPage = () => {
+        window.location.reload(false);
+      };
 
     render() {
       
@@ -74,12 +82,13 @@ class ViewTicket extends React.Component {
       }]
 
       if (Object.keys(this.state.tickets).length !== 0) {
+        
         var data = [];
         var item;
         for ( item of this.state.tickets) {
             data.push({"id": item.id, "First_Name" : item.firstName, "Last_Name": item.lastName, "Email": item.email, "Urgency": item.urgency, "Complete": item.complete});
         }
-        table =  <ReactFlexyTable data={data} additionalCols={additionalCols} globalSearch/>
+        table =  <ReactFlexyTable data={data} additionalCols={additionalCols} sortable globalSearch/>
       }; 
 
       if (Object.keys(this.state.oneTicket).length !== 0) {
@@ -101,9 +110,9 @@ class ViewTicket extends React.Component {
           <br></br>
           <Container fluid>
             <Row>
-              <Col xs lg="8">{table}</Col>
+              <Col lg="8" xlg={8}>{table}</Col>
 
-          <Col xs lg="4">
+            <Col lg="4" xlg={4}>
                 {display}
                 <br></br>
                 {deleteButton}{completeButton}</Col>
