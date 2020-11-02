@@ -1,7 +1,6 @@
 import React from 'react';
 import { MenuItems } from "./MenuItems";
-import { Button } from "./Button";
-import './Navbar.css'
+import './Stylesheets/Navbar.css'
 
 class Navbar extends React.Component {
     state = { clicked: false }
@@ -16,6 +15,7 @@ class Navbar extends React.Component {
                 <h1 className="Navbar-logo">Tickets<i className="fas fa-ticket-alt"></i></h1>
                 <div className="menu-icon" onClick={this.handleClick}>
                     <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+        
                     
                 </div>
                 <ul className={ this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
@@ -30,7 +30,6 @@ class Navbar extends React.Component {
                     })}     
                     
                 </ul>
-                <Button className="signUp"> Sign Up </Button>
             </nav>
         )
     }

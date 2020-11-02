@@ -1,22 +1,14 @@
 .table-header{
     margin-left: 20px;
-    margin-top: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
     font-weight: bold;
 }
 
-table, th, td {
-    border: 1px solid black;
-    text-align: center;
-    padding: 20px;
-    margin-left: 20px;
-  }
-th {
+.table-col1 {
     background-color: #4ad9e4;
     color: white;
     font-weight: 400;
-}
-td {
-    padding: 10px;
 }
 
 span{
@@ -30,4 +22,9 @@ span{
 
 .results {
     margin-left: 20px;
+    margin-top: -5px;
+}
+
+.btn-primary {
+    margin-left: 15px;
 }

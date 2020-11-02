@@ -5,3 +5,9 @@
     /* font-family: 'Montserrat', sans-serif; */
     font-family: 'Maven Pro', sans-serif;
 }
+
+:root {
+    --rft-main-color: #4ad9e4;
+    --rft-button-color: #6668f4;
+    --rft-even-row-color: #f3f3f3;
+}

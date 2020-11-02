@@ -3,10 +3,10 @@ export const MenuItems = [
         title: 'Home',
         url: '/',
         cName: 'nav-links'
-    },    
+    },
     {
         title: 'Create a Ticket',
-        url: '/',
+        url: '/Ticket',
         cName: 'nav-links'
     },
     {
@@ -16,12 +16,12 @@ export const MenuItems = [
     },
     {
         title: 'About',
-        url: '/about',
+        url: '/About',
         cName: 'nav-links'
     },
     {
         title: 'Contact',
-        url: '/contact',
+        url: '/Card',
         cName: 'nav-links'
     },
     {
