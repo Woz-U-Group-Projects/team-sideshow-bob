@@ -6,12 +6,11 @@
     font-size: 1.2rem;
 }
 
-.Navbar-logo {
-    color: #fff;
-    display: flex;
-    margin-left: 20px;
-    cursor: pointer;
-    text-align: center;
+.logo {
+    width: 20%;
+    margin-left: 5px;
+    margin-bottom: 20px;
+    cursor: context-menu;
 }
 
 .fa-ticket-alt {

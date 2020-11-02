@@ -1,55 +1,6 @@
-
-.carousel,
-.item,
-.active {
-    max-height: 80%;
-    margin-bottom: 60px;
+.Caption {
+    margin-bottom: 10px;
+    color: rgb(110 , 94, 254);
+    text-shadow: 2px 2px 2px #000000;
+    
 }
-
-.carousel-inner {
-    height: 100%;
-    width: 100%;
-}
-.carousel-img-width {
-    width: 100%;
-  }
-  .caption {
-    margin-bottom: 100px;
-}
-
-@media (min-width: 576px) { 
-    .carousel {
-        
-        width:auto;
-        height:auto;
-      }
-     
-}
-
-
-@media (min-width: 768px) { 
-    .carousel {
-        
-        width:auto;
-        height:auto;
-      }
- }
-
-
-
- @media (max-width: 992px) {
-    .carousel {
-       
-        width:auto;
-        height:auto;
-      }
-}
-
-
-@media (min-width: 1200px) {
-    .carousel {
-       
-        width:auto;
-        height:auto;
-      }
- }

@@ -19,10 +19,10 @@ class Footer extends React.Component {
           <Container>
             <Navbar expand="lg" sticky="bottom">
               <NavbarBrand className="wrapper">
-                <a href="http://www.github.com" target="_blank"><i class="fab fa-2x fa-github"></i></a>
-                <a href="http://www.facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
-                <a href="http://www.twitter.com" target="_blank"><i class="fab fa-2x fa-twitter-square"></i></a>
-                <a href="http://www.instagram.com" target="_blank"><i class="fab fa-2x fa-instagram"></i></a>
+                <a href="http://www.github.com" target="_blank"><i class="fab fa-lg fa-github"></i></a>
+                <a href="http://www.facebook.com" target="_blank"><i class="fab fa-lg fa-facebook-square"></i></a>
+                <a href="http://www.twitter.com" target="_blank"><i class="fab fa-lg fa-twitter-square"></i></a>
+                <a href="http://www.instagram.com" target="_blank"><i class="fab fa-lg fa-instagram"></i></a>
               </NavbarBrand>
             </Navbar>
           </Container>

@@ -12,31 +12,22 @@ class Home extends React.Component {
             <div>          
                 <div className='container-fluid' >
                     <Carousel>
-                        <Carousel.Item style={{ 'height': "750px" }} >
-                            <img style={{ 'height': "800px", 'object-fit': "contain" }}
-                                className="d-block w-100"
-                                src={IMG_2}
-                                alt="computer" />
-                            <Carousel.Caption>
-                                <h3 style={{'color': "blue"}}>Computer Problems?</h3>
+                        <Carousel.Item>
+                            <img className="d-block w-100" src={IMG_2} alt="computer" />
+                            <Carousel.Caption className="Caption">
+                                <h3>Computer Problems?</h3>
                             </Carousel.Caption>
                         </Carousel.Item >
-                        <Carousel.Item style={{ 'height': "750px" }}>
-                            <img style={{ 'height': "800px", 'object-fit': "contain" }}
-                                className="d-block w-100"
-                                src={IMG_1}
-                                alt="code" />
-                            <Carousel.Caption>
-                                <h3 style={{'color': "blue"}}>Create a ticket</h3>
+                        <Carousel.Item>
+                            <img className="d-block w-100" src={IMG_1} alt="code" />
+                            <Carousel.Caption className="Caption">
+                                <h3>Create a ticket</h3>
                             </Carousel.Caption>
                         </Carousel.Item>
-                        <Carousel.Item style={{ 'height': "750px"  }}>
-                            <img style={{ 'height': "800px",'object-fit': "contain" }}
-                                className="d-block w-100"
-                                src={IMG_3}
-                                alt="glasses" />
-                            <Carousel.Caption>
-                                <h3 style={{'color': "blue"}}>Help is on the way!</h3>
+                        <Carousel.Item>
+                            <img className="d-block w-100" src={IMG_3} alt="glasses" />
+                            <Carousel.Caption className="Caption">
+                                <h3>Help is on the way!</h3>
                             </Carousel.Caption>
                         </Carousel.Item>
                     </Carousel>
