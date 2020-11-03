@@ -85,7 +85,7 @@ class ViewTicket extends React.Component {
       for (item of this.state.tickets) {
         data.push({ "id": item.id, "First_Name": item.firstName, "Last_Name": item.lastName, "Email": item.email, "Urgency": item.urgency, "Complete": item.complete });
       }
-      table= <ReactFlexyTable data={data} additionalCols={additionalCols} globalSearch />
+      table= <ReactFlexyTable data={data} additionalCols={additionalCols} sortable globalSearch />
     }
 
     if (Object.keys(this.state.oneTicket).length !== 0) {
