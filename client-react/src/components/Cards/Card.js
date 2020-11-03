@@ -2,7 +2,7 @@ import React from 'react'
 import Card from './CardUi'
 
 // import IMG_1 from 'https://media-exp1.licdn.com/dms/image/C5103AQEFNvlsjPks7w/profile-displayphoto-shrink_200_200/0?e=1609372800&v=beta&t=9O_lO6MZ_rLRwc5Ilmy10WWlaMQ_CXI5n2ZLHPVJO1Q';
-import Chris_Whiting from '../assets/Chris-Whiting.jpg'
+import Chris_Whiting from '../assets/Chris_Whiting.jpg'
 import Beckie_Rich from '../assets/Beckie_Rich.jpg'
 import Thompson_Scott from '../assets/Thompson_Scott.jpg'
 
