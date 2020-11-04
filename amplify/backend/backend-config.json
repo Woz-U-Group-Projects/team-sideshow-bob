@@ -1,0 +1,10 @@
+{
+  "function": {
+    "teamsideshowbob4fabf672": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    }
+  }
+}
