@@ -33,3 +33,13 @@
 .card-img-top:hover{
     transform: scale(1.8);
 }
+
+.links {
+    padding: 0.4rem 1.9rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
+    display: block;
+    margin-top: -3rem;
+    z-index: 0;
+    position: relative;
+}

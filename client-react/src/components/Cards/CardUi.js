@@ -1,9 +1,23 @@
-import React from 'react'
-
+import React, {useState} from 'react'
 import "./cardStyle.css";
 
 
+
 const Card = props => {
+
+    function Ahref() {
+
+        const [state,setState]=useState(false);
+        let url="";
+        return (
+          <div className="Ahref">
+           <a href={url}>LinkedIn handle</a>
+          </div>
+        );
+      }
+    
+      const [state,setState]=useState(true);
+      
 
 
 return (
@@ -14,7 +28,7 @@ return (
     <div className="card-body text-dark">
     <h4 className="card-title">{props.title}</h4>
     <p className="card-text text-secondary">{props.text} </p>
-    <a href="#" className="btn btn-outline-success">{props.link}</a>
+    {/* <a href='#' className="btn btn-outline-success">{props.button}</a> */}
     </div>
     </div>
 
