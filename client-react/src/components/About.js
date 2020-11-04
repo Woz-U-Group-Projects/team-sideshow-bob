@@ -1,15 +1,19 @@
 import React from 'react'
 import HeroSection from './HeroSection'
-import { AboutObjOne, AboutObjThree, AboutObjTwo, AboutObjFour } from './Data'
+import { AboutObjOne, AboutObjTwo, AboutObjThree, AboutObjFour, AboutObjFive, AboutObjSix, AboutObjSeven } from './Data'
 
 
 function About() {
+    
     return (
         <>
            <HeroSection {...AboutObjOne} /> 
-           <HeroSection {...AboutObjThree} />
            <HeroSection {...AboutObjTwo} />
+           <HeroSection {...AboutObjThree} />
            <HeroSection {...AboutObjFour} />
+           <HeroSection {...AboutObjFive} />
+           <HeroSection {...AboutObjSix} />
+           <HeroSection {...AboutObjSeven} />
         </>
     )
 }
