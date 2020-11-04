@@ -25,19 +25,26 @@ class Cards extends React.Component {
             <div className= "container-fluid1 d-flex justify-content-center">
                 <div className="row">
                     <div className="col-lx">
+                    
                         <Card imgsrc= {Brian_Lewis} title= "Brian Lewis" text="Junior Developer"></Card> 
+                        <a  className="btn btn-outline-success links" href="https://www.linkedin.com/in/briandlewis0612/">LinkedIn</a>
+                        
                     </div>
                     <div className="col-lx">
-                        <Card imgsrc= {Gio_Nava} title= "Giovanni Nava" text="Junior Developer"/>
+                        <Card imgsrc= {Gio_Nava} title= "Giovanni Nava" text="Junior Developer"  />
+                        <a  className="btn btn-outline-success links" href="https://www.linkedin.com/in/giovannie-nava">LinkedIn</a>
                     </div>
                     <div className="col-lx">
                         <Card imgsrc={Chris_Whiting} title= "Chris Whiting" text="Junior Developer"/>
+                        <a  className="btn btn-outline-success links" href="https://www.linkedin.com/in/chris-whiting-4b817a120/">LinkedIn</a>
                     </div>
                     <div className="col-lx">
                         <Card imgsrc={Beckie_Rich} title= "Beckie Rich" text="Junior Developer"/>
+                        <a  className="btn btn-outline-success links" href="https://www.linkedin.com/in/beckie-rich-22164254/">LinkedIn</a>
                     </div>
                     <div className="col-lx">
                         <Card imgsrc={Scott_Thompson} title= "Scott Thompson" text="Junior Developer"/>
+                        <a  className="btn btn-outline-success links" href="https://www.linkedin.com/in/scott-thompson-7ba618199/">LinkedIn</a>
                     </div>
                 </div>
             </div>
