@@ -29,9 +29,6 @@ import Button from 'react-bootstrap/esm/Button';
                                     <h1 className= {lightText ? 'heading' : 'heading dark'}>{headLine}</h1>
                                     <p className= {LightTextDesc ? 'home__hero-subtitle' : 'home__hero-subtitle dark'}>{description}</p>
                                     <Link to='/sign-up'>
-                                        <Button buttonSize = 'btn--wide' buttonColor='blue'>
-                                            {buttonLabel}
-                                        </Button>
                                     </Link>
                                 </div>
                             </div>
