@@ -61,10 +61,6 @@
         position: relative;
     }
 
-    /* .NavbarItems .Nav-menu {
-        display: none !important;
-    } */
-
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -82,7 +78,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 1;
+        z-index: 999;
     }
 
     .nav-links {
@@ -121,18 +117,6 @@
     .fa-times {
         color: #fff;
         font-size: 2rem;
-    }
-
-    .nav-links-mobile {
-        display: block;
-        text-align: center;
-        padding: 1.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: #4ad9e4;
-        color: #fff;
-        font-size: 1.5rem;
     }
 
     .nav-links-mobile:hover {
@@ -149,10 +133,6 @@
         position: relative;
     }
 
-    /* .NavbarItems .Nav-menu {
-        display: none !important;
-    } */
-
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -170,7 +150,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 1;
+        z-index: 999;
     }
 
     .nav-links {
@@ -209,18 +189,6 @@
     .fa-times {
         color: #fff;
         font-size: 2rem;
-    }
-
-    .nav-links-mobile {
-        display: block;
-        text-align: center;
-        padding: 1.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: #4ad9e4;
-        color: #fff;
-        font-size: 1.5rem;
     }
 
     .nav-links-mobile:hover {
@@ -237,10 +205,6 @@
         position: relative;
     }
 
-    /* .NavbarItems .Nav-menu {
-        display: none !important;
-    } */
-
     .nav-menu {
         display: flex;
         flex-direction: column;
@@ -258,7 +222,7 @@
         left: 0;
         opacity: 1;
         transition: all 0.5s ease;
-        z-index: 1;
+        z-index: 999;
     }
 
     .nav-links {
@@ -297,18 +261,6 @@
     .fa-times {
         color: #fff;
         font-size: 2rem;
-    }
-
-    .nav-links-mobile {
-        display: block;
-        text-align: center;
-        padding: 1.5rem;
-        margin: 2rem auto;
-        border-radius: 4px;
-        width: 80%;
-        background: #4ad9e4;
-        color: #fff;
-        font-size: 1.5rem;
     }
 
     .nav-links-mobile:hover {
