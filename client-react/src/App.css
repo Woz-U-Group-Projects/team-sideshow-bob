@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Heebo', sans-serif;
+}
+
+:root {
+    --rft-main-color: #4ad9e4;
+    --rft-button-color: #6668f4;
+    --rft-even-row-color: #f3f3f3;
+}

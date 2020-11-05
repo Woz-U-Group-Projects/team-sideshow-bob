@@ -1,0 +1,52 @@
+.main {
+  min-height: 100vh;
+  --footer-height: 60px;
+}
+
+.content {
+  height: 100vh;
+}
+
+footer {
+  height: 60px;
+  margin-top: -200px;
+  bottom: 0;
+  z-index: 999;
+}
+
+.footerItems {
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(90deg, rgb(110, 94, 254) 0%, rgba(73, 63, 252, 1) 100%);
+  display: flex;
+  justify-content: center;
+
+}
+
+.wrapper {
+  align-items: center;
+  height: 100vh;
+
+}
+
+.wrapper i {
+  padding: 10px;
+  text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
+  transition: all ease-in-out 150ms;
+}
+.wrapper a:nth-child(1) {
+  color: white;
+}
+.wrapper a:nth-child(2) {
+  color: white;
+}
+.wrapper a:nth-child(3) {
+  color: white;
+}
+.wrapper a:nth-child(4){
+  color: white;
+}
+.wrapper i:hover {
+  margin-top: -3px;
+  text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+}
