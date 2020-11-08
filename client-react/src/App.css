@@ -3,14 +3,29 @@
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Heebo', sans-serif; */
 }
 
 :root {
-    --rft-main-color: #4AD9E4;
-    --rft-button-color: #6668F4;
-    --rft-even-row-color: #F3F3F3;
+    --rft-main-color: #4ad9e4;
+    --rft-button-color: #6668f4;
+    --rft-even-row-color: #f3f3f3;
+}
+
+svg:hover #Layer_2 {
+    animation-duration: 1.2s;
+    animation-name: animateLogo;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
-.ticket-viewer {
-    background-color:#7510F7 ;
-}
+  @keyframes animateLogo {
+    from {
+      transform: translateX(0) translateY(0);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(25px) translateY(-23px);
+      opacity: 1;
+    }
+  }

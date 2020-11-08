@@ -5,38 +5,28 @@ export const MenuItems = [
         cName: 'nav-links'
     },
     {
-        title: 'Create Ticket',
-        url: '/createticket',
+        title: 'Create a Ticket',
+        url: '/Ticket',
         cName: 'nav-links'
-    },    
+    },
     {
-        title: 'View',
+        title: 'View Tickets',
         url: '/view',
         cName: 'nav-links'
     },
     {
         title: 'About',
-        url: '/about',
+        url: '/About',
         cName: 'nav-links'
     },
     {
         title: 'Contact',
-        url: '/contact',
+        url: '/Card',
         cName: 'nav-links'
     },
-
-    {
-        title: 'Copy Code',
-        url: '/copycode',
-        cName: 'nav-links'
-    },
-
     {
         title: 'Sign Up',
         url: '#',
         cName: 'nav-links-mobile'
     }
-
 ]
-
-   
