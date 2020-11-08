@@ -4,13 +4,20 @@
   "private": true,
   "dependencies": {
     "axios": "^0.19.0",
+    "bootstrap": "^4.5.3",
     "react": "^16.8.6",
-    "react-dom": "^16.8.6",
+    "react-bootstrap": "^1.4.0",
+    "react-dom": "^16.14.0",
+    "react-flexy-table": "^1.3.6",
+    "react-form-with-constraints": "^0.16.0",
+    "react-form-with-constraints-bootstrap4": "^0.16.0",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "3.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "deploy": "aws s3 cp --recursive ./build s3://ineedhelp.com",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
