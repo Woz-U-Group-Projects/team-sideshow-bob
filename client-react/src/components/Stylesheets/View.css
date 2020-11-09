@@ -1,0 +1,30 @@
+.table-header{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.table-col1 {
+    background-color: #4ad9e4;
+    color: white;
+    font-weight: 400;
+}
+
+span{
+    font-weight: bold;
+}
+
+.delete-button {
+    margin-right: 5px;
+    margin-left: 20px;
+}
+
+.results {
+    margin-left: 20px;
+    margin-top: -5px;
+}
+
+.btn-primary {
+    margin-left: 15px;
+}
