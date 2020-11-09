@@ -51,7 +51,10 @@ class Ticket extends React.Component {
     render() {
         return (
             <div>
-                <form onSubmit={this.handleSubmit}>
+                <div className="ticketForm">
+                <br></br>
+        
+                <form  onSubmit={this.handleSubmit}>
                     <Form.Group className="Input">
                         <Form.Control type="text" name="firstName" placeholder="First Name" ref={this.firstName} />
                     </Form.Group>
@@ -110,6 +113,7 @@ class Ticket extends React.Component {
 
                     <Button variant="secondary" type="button" className="submit" onClick={this.addTicket}>Submit Ticket</Button>
                 </form>
+                </div>
             </div>
         );
     }
