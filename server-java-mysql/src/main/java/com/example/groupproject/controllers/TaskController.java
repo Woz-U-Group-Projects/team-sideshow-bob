@@ -51,8 +51,7 @@ public class TaskController {
   @PutMapping("/{id}")
   public Task updateProject(@PathVariable Long id, @RequestBody Task task) {
     Task foundTask = taskRepository.findById(id).orElse(null);
-    if (foundTask != null) {
-    	foundTask.setName(task.getName());
+    if (foundTask != null) {;
     	foundTask.setComplete(task.getComplete());
       taskRepository.save(foundTask);
       return foundTask;
